@@ -29,6 +29,8 @@ def main():
          print("--------- Character Count -------")
          #print(list_of_char_num_dicts)
          for item in list_of_char_num_dicts:
+             if not item["char"].isalpha():
+                continue
              print(f"{item['char']}: {item['num']}")
     
 main()
